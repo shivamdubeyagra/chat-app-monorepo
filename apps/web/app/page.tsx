@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", height: "100vh" }}>
       <TextInput placeholder="Enter room name" value={roomName} onChange={(e) => setRoomName(e.target.value)}/>
-      <button onClick={() => router.push(`/room/${roomName}`)}>Join Room</button>
+      <button onClick={() => router.push(`/chat/${roomName}`)}>Join Room</button>
     </div>
   );
 }
